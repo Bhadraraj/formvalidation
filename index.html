@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3> Registration Form</h3>
+        </div>
+        <form action="" class="form">
+            <div class="form-group">
+                <label for="">UserName<sup>*</sup></label>
+                <input type="text" placeholder="Enter the username" id="username" autocomplete="on">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group">
+                <label for="">Email<sup>*</sup></label>
+                <input type="text" placeholder="Enter EmailID" id="email" autocomplete="on">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group">
+                <label for="">Phone Number<sup>*</sup></label>
+                <input type="text" placeholder="Enter phonenumber" id="phonenumber" autocomplete="on">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+
+            <div class="form-group">
+                <label for="">Password<sup>*</sup></label>
+                <input type="password" placeholder="Enter the password" id="password" autocomplete="on">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group">
+                <label for="">Confirm Password<sup>*</sup> </label>
+                <input type="password" placeholder="Enter the same password" id="confirmpassword" autocomplete="on">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group">
+                <label for="">Date of birth<sup>*</sup></label>
+                <input type="date" id="date" name="dob" min="1997-01-01" max="2001-12-31">
+                <h6> age between 21-25 only<sup>*</sup></h6>
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group">
+                <label for="state">Select a number between 1-10 <sup>*</sup></label>
+                <input type="number" min="1" max="10" id="selectNumber" name="selectNumber" min="1" max="10">
+            </div>
+            <div class="form-group">
+                <label for="">Upload your photo <sup>*</sup></label>
+                <input type="file" accept="image/*" id="uploadfile" name="uploadfile">
+                <span></span>
+            </div>
+            <input type="reset" id='reset' value="Reset">
+            <button id='submit'>Submit</button>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
