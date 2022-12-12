@@ -5,9 +5,8 @@ class FormValidation {
         phonenumber: "",
         password: "",
         confirmpassword: "",
-        uploadfile: "",
-        date: "",
-        selectNumber: ""
+        uploadfile: ""
+        
     }
     errorValues = {
         usernameErr: "",
@@ -16,8 +15,7 @@ class FormValidation {
         passwordErr: "",
         confirmpasswordErr: "",
         uploadfileErr: "",
-        dateErr: "",
-        selectNumberErr: ""
+        
     }
     showErrorMsg(index, msg) {
         const form_group = document.getElementsByClassName('form-group')[index]
